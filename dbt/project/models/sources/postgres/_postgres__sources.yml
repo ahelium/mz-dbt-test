@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: postgres
+    schema: "{{ target.schema }}"
+    tables:
+      - name: items
+      - name: users
+      - name: purchases

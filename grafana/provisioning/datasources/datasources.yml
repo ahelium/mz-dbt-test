@@ -1,0 +1,13 @@
+apiVersion: 1
+
+deleteDatasources:
+  - name: Materialize - Docker
+    orgId: 1
+
+datasources:
+  - name: Materialize ETL Prometheus Exporter
+    type: prometheus
+    uid: materializeexporter
+    access: proxy
+    url: http://prometheus:9090
+    isDefault: true

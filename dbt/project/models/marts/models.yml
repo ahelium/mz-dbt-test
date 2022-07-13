@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: dim_items
+    description: "dimension table, items"
+    columns:
+      - name: item
+        tests:
+          - accepted_values:
+                values: [ 'A', 'B', 'C', 'D']
+                alias: 'dim_items_accepted_values'
+
+  - name: dim_users
+    description: "dimension table, users"
+    columns:
+      - name: id
+        tests:
+          - unique

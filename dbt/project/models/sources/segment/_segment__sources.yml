@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: segment
+    schema: "{{ target.schema }}"
+    tables:
+      - name: json_pageviews

@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_postgres__items
+    description: "stage postgres.items"
+    columns:
+      - name: price
+        tests:
+          - not_null
+  - name: stg_postgres__purchases
+    description: "stage postgres.purchases"
+    columns:
+      - name: item_id
+        tests:
+          - relationships:
+              to: ref('stg_postgres__items')
+              field: id
+              alias: relationships_postgres_purchases_items
+  - name: stg_postgres__users
+    description: "stage postgres.users"
