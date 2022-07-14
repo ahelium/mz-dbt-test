@@ -110,7 +110,7 @@
               "uid": "materializeexporter"
             },
             "editorMode": "builder",
-            "expr": "etl_alert_rows{view_name!~\".*stg.*\"}",
+            "expr": "etl_alert_rows{view_name!~\".*stg.*\"} > 0",
             "legendFormat": "{{view_name}}",
             "range": true,
             "refId": "A"
@@ -201,7 +201,7 @@
               "uid": "materializeexporter"
             },
             "editorMode": "builder",
-            "expr": "etl_alert_rows{view_name=~\".*stg.*\"}",
+            "expr": "etl_alert_rows{view_name=~\".*stg.*\"} > 0",
             "legendFormat": "{{view_name}}",
             "range": true,
             "refId": "A"

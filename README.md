@@ -20,4 +20,6 @@ View the prometheus metrics at http://localhost:80/
 
 View the grafana dashboard at http://localhost:3000/
 
+View the dbt docs at http://localhost:8080/
+
 Note: I've ripped the load generator from Materialize's great ecommerce demo, [here](https://github.com/MaterializeInc/demos/tree/main/ecommerce), with the help of some work [seth](https://github.com/sjwiesman) did to translate it to postgres.

@@ -13,7 +13,7 @@ from kafka import KafkaProducer
 userSeedCount = 1000
 purchaseGenCount = 50000
 purchaseGenEveryMS = 100
-pageviewMultiplier = 5  # Translates to 75x purchases, currently 750/sec or 65M/day
+pageviewMultiplier = 10  
 itemInventoryMin = 1000
 itemInventoryMax = 5000
 itemPriceMin = 5
@@ -120,6 +120,7 @@ try:
                     rand_user = random.randint(1, userSeedCount)
 
                     rand_page_type = random.choice(["products", "profiles"])
+
                     if datetime.now() >= start_ts + timedelta(minutes=4):
                         email = ''
                     else:
