@@ -1,8 +1,8 @@
 ### Materialize to _the test_
 #### or: Real Time Data Quality Checks Using dbt and Materialize
+Check out the accompanying [blog post](https://materialize.com/blog-real-time-data-quality-tests-using-dbt-and-materialize) for an explainer.
 
 <img width="729" alt="image" src="https://user-images.githubusercontent.com/8192401/178839541-f0806f55-9345-44b9-8053-cb2033c2ed69.png">
-
 
 To run the demo set up:
 
